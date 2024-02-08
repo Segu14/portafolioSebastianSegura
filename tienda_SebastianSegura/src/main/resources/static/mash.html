@@ -3,147 +3,159 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
+<html lang="es"> <!-- el lang, en este caso ="es" le indicará a los desarrolladores que esta página está en español -->
     <head>
-        <title>TODO supply a title</title>
+        <title>Registro de Usuario</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en"/>
+        <meta name="description" content="Esta página cumple con la función de crear un usuario"> <!-- Descripción de la página -->
+        <meta name="keywords" content="usuario, registro, signup" <!-- Keywords de la página -->
     </head>
     <body>
         <!-- Titulo -->
-        <h1 style="text-align: center;"> Creación de Usuario </h1>
+        <header> <!-- Encabezado -->
+            <h1 style="text-align: center;"> Creación de Usuario </h1>
+        </header>
         
-        <!-- Texto bajo el tìtulo explicando la función de la página en italian -->
-        <div style="text-align: center;">
-            <i> <span style="font-family: Arial">
-                    Esta página fue diseñada con el proposito de que el cliente puede crear un usuario </span></i>
-        </div>
-        
-        <!-- Logo -->
-        <br>
-        <div style="text-align: center;">
-            <img src="img/user.png" width="200" alt="LogoUsuario">
-        </div>
-
-        <!-- Texto normal -->
-        <p style="text-align: center"> Podrás: </p>
-        
-        <!-- Lista de algunas de las opciones que el programa ofrece en lista 
-            enumerada por numeros romanos -->
-        <ol type="i" style=" position: relative; left: 600px;  list-style-position: inside;" >
-            <li> Crear un nombre de usuario </li>
-            <li> Crear una contraseña privada </li>
-            <li> Agregar una foto de perfil </li>
-        </ol>
-        
-        <br> 
-        <hr> <!-- Division de página -->
-        
-        <!-- /////////////////////////////////////////////////////////////// -->
-        
-        <!-- Texto normal -->
-        <p style="text-align: center;"> Primero necesitamos un poco de tu información personal </p>
-        <br>
-        
-        <form id="formularioInfoUsuario"
-            <!-- Caja de texto normal para que el usuario pueda ingresar su nombre -->
-            <div style="position: relative; left: 665px;">
-                <label> Nombre: </label>
-                <input type="text" placeholder="Ingresa tu nombre aquí"/>
-                <br/>
-            </div>
-            <br>
-            <!-- Caja de texto normal para que el usuario pueda ingresar sus apellidos -->
-            <div style="position: relative; left: 655px">
-                <label> Apellidos: </label>
-                <input type="text" placeholder="Ingresa tus dos apellidos"/>
-                <br/>
-            </div>
-            <br>
-            <!-- Caja de texto normal para que el usuario pueda ingresar su numero de ID -->
-            <div style="position: relative; left: 700px;">
-                <label> ID: </label>
-                <input type="text" placeholder="Ingresa tu número ID"/>
-                <br/>
-            </div>
-            <br>
-
-            <!-- Texto simple con fuente reducida y se le añade un link que dirige
-                directamente a la página del registro civil -->
-            <p style="position: relative; left: 700px; margin-top: -15px; font-size: 13px"> 
-                Si no recuerdas tu número de cédula, <br>puedes consultarlo en el 
-                <a href="https://servicioselectorales.tse.go.cr/chc/consulta_nombres.aspx" 
-                   target="_blank"> registro civil. </a></p>
-
-            <!-- El usuaruio podrá seleccionar su sexo por medio de 3 botones de radio -->
-            <div style="position: relative; left: 685px; margin-top: -15px">
-                <!-- Texto normal -->
-                <p style="display: inline-block; margin-right: 4px; vertical-align: middle"> Sexo: </p>
-
-                <!-- label de M para Masculino con su respectivo boton de radio -->
-                <label style="display: inline-block; vertical-align: middle"> M </label>
-                <input type="radio" name="sexo" style="vertical-align: middle"/>
-
-                <!-- label de F para Femenino con su respectivo boton de radio -->
-                <label style="display: inline-block; margin-left: 18px; vertical-align: middle"> F </label>
-                <input type="radio" name="sexo" style="vertical-align: middle"/>
-
-                <!-- label de N/A para No Answer con su respectivo boton de radio -->
-                <label style="display: inline-block; margin-left: 18px; vertical-align: middle"> N/A </label>
-                <input type="radio" name="sexo" style="vertical-align: middle"/>
-
-                <!-- IMPORTANTE: para poder seleccionar unicamente un boton de radio, debemos utilizar name="" en el input 
-                    y en todas las opciones colocar el mismo nombre para que el sistema detecte que todos son para una misma seccion. -->
-                <br/>
+        <section> <!-- Seccion principal de la pagina -->
+            <!-- Texto bajo el tìtulo explicando la función de la página en italian -->
+            <div style="text-align: center;">
+                <i> <span style="font-family: Arial">
+                        Esta página fue diseñada con el proposito de que el cliente puede crear un usuario </span></i>
             </div>
 
-        <!-- /////////////////////////////////////////////////////////////// -->
+            <!-- Logo -->
+            <br>
+            <div style="text-align: center;">
+                <img src="img/user.png" width="200" alt="LogoUsuario">
+            </div>
 
-            <br>
-            <div style="text-align: center">
-                <strong > Ahora vamos a crear tu usuario </strong>
-            </div>
-            <br>
-            <br>
+            <!-- Texto normal -->
+            <p style="text-align: center"> Podrás: </p>
 
-            <!-- Caja de texto normal para que el usuario pueda ingresar su username -->
-            <div style="position: relative; left: 594px;">
-                <label> Nombre de Usuario: </label>
-                <input type="text" placeholder="Ingresa tu @username"/>
-                <br/>
-            </div>
-            <br>
-            <!-- Caja de texto password para que el usuario pueda ingresar una contraseña incriptada -->
-            <div style="position: relative; left: 648px;">
-                <label> Contraseña: </label>
-                <input type="password" placeholder="Ingresa tu contraseña"/>
-                <br/>
-            </div>
-            <br>
-            <!-- Caja de file para que el usuario pueda subir un archivo de su PC -->
-            <div style="position: relative; left: 563px;">
-                <label> Foto de Perfil (opcional): </label>
-                <input type="file" />
-                <br/>
-            </div>
+            <!-- Lista de algunas de las opciones que el programa ofrece en lista 
+                enumerada por numeros romanos -->
+            <ol type="i" style=" position: relative; left: 600px;  list-style-position: inside;" >
+                <li> Crear un nombre de usuario </li>
+                <li> Crear una contraseña privada </li>
+                <li> Agregar una foto de perfil </li>
+            </ol>
+
+            <br> 
+            <hr> <!-- Division de página -->
+
+            <!-- /////////////////////////////////////////////////////////////// -->
+
+            <!-- Texto normal -->
+            <p style="text-align: center;"> Primero necesitamos un poco de tu información personal </p>
             <br>
 
-            <!-- Checkbox con texto cambiado de color en el que el usuario acepta 
-                    los terminos de conidicion. -->
-            <div style="position: relative; left: 580px">
-                <input type="checkbox" style="vertical-align: -2px"/>
-                <label style="font-size: 14px; color: darkgray"> Acepto los terminos de condición de la página. </label>
-                <br/>
-            </div>
-            <br>
+            <form id="formularioInfoUsuario"
+                <!-- Caja de texto normal para que el usuario pueda ingresar su nombre -->
+                <div style="position: relative; left: 665px;">
+                    <label> Nombre: </label>
+                    <input type="text" placeholder="Ingresa tu nombre aquí"/>
+                    <br/>
+                </div>
+                <br>
+                <!-- Caja de texto normal para que el usuario pueda ingresar sus apellidos -->
+                <div style="position: relative; left: 655px">
+                    <label> Apellidos: </label>
+                    <input type="text" placeholder="Ingresa tus dos apellidos"/>
+                    <br/>
+                </div>
+                <br>
+                <!-- Caja de texto normal para que el usuario pueda ingresar su numero de ID -->
+                <div style="position: relative; left: 700px;">
+                    <label> ID: </label>
+                    <input type="text" placeholder="Ingresa tu número ID"/>
+                    <br/>
+                </div>
+                <br>
 
-            <div style="text-align: center">
-                <input type="button" value="Enviar" style="background-color: #0dd90d; font-size: 25px; color: white; width: 220px"/>
-            </div>
-            <br>
-            <div style="text-align: center">
-                <input type="reset" value="Borrar todo" style="background-color: red; font-size: 15px; color: white; width: 220px"/>
-            </div>
-        </form>
+                <!-- Texto simple con fuente reducida y se le añade un link que dirige
+                    directamente a la página del registro civil -->
+                <p style="position: relative; left: 700px; margin-top: -15px; font-size: 13px"> 
+                    Si no recuerdas tu número de cédula, <br>puedes consultarlo en el 
+                    <a href="https://servicioselectorales.tse.go.cr/chc/consulta_nombres.aspx" 
+                       target="_blank"> registro civil. </a></p>
+
+                <!-- El usuaruio podrá seleccionar su sexo por medio de 3 botones de radio -->
+                <div style="position: relative; left: 685px; margin-top: -15px">
+                    <!-- Texto normal -->
+                    <p style="display: inline-block; margin-right: 4px; vertical-align: middle"> Sexo: </p>
+
+                    <!-- label de M para Masculino con su respectivo boton de radio -->
+                    <label style="display: inline-block; vertical-align: middle"> M </label>
+                    <input type="radio" name="sexo" style="vertical-align: middle"/>
+
+                    <!-- label de F para Femenino con su respectivo boton de radio -->
+                    <label style="display: inline-block; margin-left: 18px; vertical-align: middle"> F </label>
+                    <input type="radio" name="sexo" style="vertical-align: middle"/>
+
+                    <!-- label de N/A para No Answer con su respectivo boton de radio -->
+                    <label style="display: inline-block; margin-left: 18px; vertical-align: middle"> N/A </label>
+                    <input type="radio" name="sexo" style="vertical-align: middle"/>
+
+                    <!-- IMPORTANTE: para poder seleccionar unicamente un boton de radio, debemos utilizar name="" en el input 
+                        y en todas las opciones colocar el mismo nombre para que el sistema detecte que todos son para una misma seccion. -->
+                    <br/>
+                </div>
+
+            <!-- /////////////////////////////////////////////////////////////// -->
+
+                <br>
+                <div style="text-align: center">
+                    <strong > Ahora vamos a crear tu usuario </strong>
+                </div>
+                <br>
+                <br>
+
+                <!-- Caja de texto normal para que el usuario pueda ingresar su username -->
+                <div style="position: relative; left: 594px;">
+                    <label> Nombre de Usuario: </label>
+                    <input type="text" placeholder="Ingresa tu @username"/>
+                    <br/>
+                </div>
+                <br>
+                <!-- Caja de texto password para que el usuario pueda ingresar una contraseña incriptada -->
+                <div style="position: relative; left: 648px;">
+                    <label> Contraseña: </label>
+                    <input type="password" placeholder="Ingresa tu contraseña"/>
+                    <br/>
+                </div>
+                <br>
+                <!-- Caja de file para que el usuario pueda subir un archivo de su PC -->
+                <div style="position: relative; left: 563px;">
+                    <label> Foto de Perfil (opcional): </label>
+                    <input type="file" />
+                    <br/>
+                </div>
+                <br>
+
+                <!-- Checkbox con texto cambiado de color en el que el usuario acepta 
+                        los terminos de conidicion. -->
+                <div style="text-align:  center">
+                    <input type="checkbox" style="vertical-align: -2px"/>
+                    <label style="font-size: 14px; color: darkgray"> Acepto los terminos de condición de la página. </label>
+                    <br/>
+                </div>
+                <br>
+
+                <div style="text-align: center">
+                    <input type="button" value="Enviar" style="background-color: #0dd90d; font-size: 25px; color: white; width: 220px"/>
+                </div>
+                <br>
+                <div style="text-align: center">
+                    <input type="reset" value="Borrar todo" style="background-color: red; font-size: 15px; color: white; width: 220px"/>
+                </div>
+            </form>
+            
+            <hr>
+            <footer>
+                <p style="text-align: center"> Sebastián Segura Sáenz &COPY; 2024</p>
+            </footer>
+            
+        </section>
     </body>
 </html>
