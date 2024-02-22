@@ -43,4 +43,8 @@
             <exec.executable>java</exec.executable>
         </properties>
     </action>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 </actions>
