@@ -40,6 +40,7 @@ public class CategoriaController {
     @PostMapping("/guardar")
     public String categoriaGuardar (Categoria categoria,
             @RequestParam("imagenFile") MultipartFile imagenFile) {
+        System.out.println("hola mundo");
         if (!imagenFile.isEmpty()) {
             categoriaService.save(categoria);
             categoria.setRutaImagen(
