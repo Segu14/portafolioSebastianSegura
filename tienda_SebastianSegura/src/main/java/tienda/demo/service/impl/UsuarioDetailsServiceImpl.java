@@ -1,6 +1,5 @@
 package tienda.demo.service.impl;
 
-import tienda.demo.service.UsuarioDetailsService;
 import tienda.demo.dao.UsuarioDao;
 import tienda.demo.domain.Usuario;
 import tienda.demo.domain.Rol;
@@ -12,6 +11,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import tienda.demo.service.UsuarioDetailsService;
 
 @Service ("userDetailsService")
 public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDetailsService {
